@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <nav
-      className="flex justify-between items-center h-16 bg-white text-black relative font-mono"
+      className="flex justify-between items-center h-16 bg-gray-200 text-black relative font-mono"
       role="navigation"
     >
       <a href="/" className="pl-4">

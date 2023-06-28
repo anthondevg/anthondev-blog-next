@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Anthondev Blog",
-  description: "a simple blog to share my toughts...",
+  description: "a simple blog to share my toughts made with Nextjs...",
 };
 
 export default function RootLayout({
@@ -17,9 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {" "}
-        <Navbar />
-        {children}
+        <Navbar /> {children}
       </body>
     </html>
   );

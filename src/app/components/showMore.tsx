@@ -7,7 +7,7 @@ export default function ShowMore() {
       onClick={(e) => {
         e.stopPropagation();
       }}
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      className="bg-indigo-400 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded"
     >
       Show More
     </button>

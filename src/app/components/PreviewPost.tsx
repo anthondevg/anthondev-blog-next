@@ -2,14 +2,12 @@ import Link from "next/link";
 import React from "react";
 import ShowMore from "./showMore";
 
-export default function Post({ data }) {
+export default function PreviewPost({ data }) {
   return (
-    <Link href={"/page/1"}>
-      <article className="rounded-lg mb-4 p-4 border border-2">
+    <Link href={`/post/${data.id}`}>
+      <article className="mb-4 p-8 border border-2 bg-gray-400">
         <header>
-          <h2 className="font-bold text-4xl">{data.title}</h2>
-          <p>{data.date}</p>
-          <p>{data.author}</p>
+          <h2 className="font-bold text-gray-800 text-4xl">{data.title}</h2>
         </header>
         <p className="text-black w-full d-block">
           {data.content.substring(0, 150)}
